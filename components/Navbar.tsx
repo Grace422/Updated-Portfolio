@@ -1,5 +1,6 @@
 import React from 'react'
 import { Moon, Sun } from 'lucide-react'
+import Link from 'next/link'
 
 export default function Navbar() {
   return (
@@ -8,13 +9,11 @@ export default function Navbar() {
         <h1 className='text-2xl font-arial'>GRACE</h1>
       </div>
       <div className="flex flex-row items-center justify-between gap-8">
-        <div>
-          <ul className="flex flex-row items-center justify-between gap-16">
-          <li>Home</li>
-          <li>About</li>
-          <li>Projects</li>
-          <li>Contact Me</li>
-        </ul>
+        <div className="flex flex-row items-center justify-between gap-16">
+          <Link href="/">Home</Link>
+          <Link href="/about">About</Link>
+          <Link href="/projects">Projects</Link>
+          <Link href="/contact">Contact Me</Link>
         </div>
         <div className="flex flex-row items-center">
           <Moon size={20} />

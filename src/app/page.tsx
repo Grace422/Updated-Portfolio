@@ -1,6 +1,9 @@
 import Image from "next/image";
 import Footer from "../../components/Footer";
 import Navbar from "../../components/Navbar";
+import Contact from "./contact";
+import Project from "./project";
+
 
 const VERTICAL_LINES = [4.5, 35, 65, 95.5];
 const HORIZONTAL_LINES = [9, 67];
@@ -83,6 +86,8 @@ export default function Home() {
         {NAME}
       </h1>
     </main>
+    <Project/>
+    <Contact/>
     <Footer/>
     </>
   );
