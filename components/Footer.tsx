@@ -1,4 +1,5 @@
 import React from 'react'
+import Image from 'next/image'
 
 export default function Footer() {
   return (
@@ -10,10 +11,10 @@ export default function Footer() {
         <p className='text-sm text-slate-400 dark:text-slate-500'>© 2026 GRACE. All rights reserved.</p>
       </div>
       <div className="flex items-center gap-2">
-                <div className="w-6 h-6 rounded-md cursor-pointer dark:bg-slate-600 bg-slate-900" />
-                <div className="w-6 h-6 rounded-md cursor-pointer dark:bg-slate-600 bg-slate-900" />
-                <div className="w-6 h-6 rounded-md cursor-pointer dark:bg-slate-600 bg-slate-900" />
-              </div>
+        <Image src="/instagram.png" alt="Instagram" width={20} height={20} />
+        <Image src="/linkedin.png" alt="Linkedin" width={20} height={20} />
+        <Image src="/github.png" alt="GitHub" width={20} height={20} /> 
+      </div>
     </div>
   )
 }
