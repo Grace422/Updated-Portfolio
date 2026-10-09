@@ -3,7 +3,7 @@ import { Moon, Sun } from 'lucide-react'
 
 export default function Navbar() {
   return (
-    <div className="flex flex-row items-center justify-between px-20 py-8 font-sans">
+    <div className="flex flex-row items-center justify-between px-20 py-8 font-sans text-white bg-[#db4c1a] ">
       <div>
         <h1 className='text-2xl font-arial'>GRACE</h1>
       </div>
